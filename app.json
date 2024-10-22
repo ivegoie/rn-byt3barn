@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "rn-byt3barn",
+    "scheme": "rn-byt3barn",
     "slug": "rn-byt3barn",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -22,6 +23,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": ["expo-router"]
   }
 }
