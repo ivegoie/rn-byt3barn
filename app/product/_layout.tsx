@@ -3,7 +3,7 @@ import { TouchableOpacity } from "react-native";
 
 import { Ionicons } from "@expo/vector-icons";
 
-export const ProductLayout = () => {
+const ProductLayout = () => {
   return (
     <Stack>
       <Stack.Screen
@@ -21,3 +21,5 @@ export const ProductLayout = () => {
     </Stack>
   );
 };
+
+export default ProductLayout;

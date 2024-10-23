@@ -1,15 +1,16 @@
 import { Stack } from "expo-router";
 
-export const RootLayout = () => {
+const RootLayout = () => {
   return (
     <Stack>
       <Stack.Screen name="(shop)" options={{ headerShown: false }} />
-      <Stack.Screen name="Categories" options={{ headerShown: false }} />
-      <Stack.Screen name="Product" options={{ headerShown: false }} />
+      <Stack.Screen name="categories" options={{ headerShown: false }} />
+      <Stack.Screen name="product" options={{ headerShown: false }} />
       <Stack.Screen
         name="cart"
         options={{
           presentation: "modal",
+          animation: "fade_from_bottom",
           title: "Shopping Cart",
         }}
       />
@@ -17,3 +18,5 @@ export const RootLayout = () => {
     </Stack>
   );
 };
+
+export default RootLayout;

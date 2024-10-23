@@ -12,7 +12,7 @@ const TabBarIcon = (props: {
 
 const TabsLayout = () => {
   return (
-    <View style={styles.safeArea}>
+    <SafeAreaView style={styles.safeArea}>
       <Tabs
         screenOptions={{
           tabBarActiveTintColor: "#1BC464",
@@ -37,7 +37,7 @@ const TabsLayout = () => {
           }}
         />
         <Tabs.Screen
-          name="orders/index"
+          name="orders"
           options={{
             title: "Orders",
             tabBarIcon(props) {
@@ -46,7 +46,7 @@ const TabsLayout = () => {
           }}
         />
       </Tabs>
-    </View>
+    </SafeAreaView>
   );
 };
 

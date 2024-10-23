@@ -1,3 +1,5 @@
+import React from "react";
+
 import { Link, Stack } from "expo-router";
 import { View, StyleSheet } from "react-native";
 

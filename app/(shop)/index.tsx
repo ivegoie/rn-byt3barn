@@ -1,12 +1,12 @@
 import { FlatList, StyleSheet, Text, View } from "react-native";
 
-import { PRODUCTS } from "../../../assets/products";
-import { ProductListItem } from "../../components/product-list-item";
-import { ListHeader } from "../../components/list-header";
+import { PRODUCTS } from "../../assets/products";
+import { ProductListItem } from "../components/product-list-item";
+import { ListHeader } from "../components/list-header";
 
 const Home = () => {
   return (
-    <View style={{ backgroundColor: "white" }}>
+    <View>
       <FlatList
         data={PRODUCTS}
         renderItem={({ item }) => <ProductListItem product={item} />}
@@ -26,7 +26,6 @@ export default Home;
 const styles = StyleSheet.create({
   contentContainer: {
     paddingBottom: 20,
-    backgroundColor: "white",
   },
   columnWrapper: {
     justifyContent: "space-between",
