@@ -11,6 +11,7 @@ import { useForm, Controller } from "react-hook-form";
 import * as Zod from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import React from "react";
+import { Stack } from "expo-router";
 
 const authSchema = Zod.object({
   email: Zod.string().email({ message: "Invalid email address" }),
